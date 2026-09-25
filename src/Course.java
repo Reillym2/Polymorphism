@@ -1,3 +1,5 @@
+import javax.naming.Name;
+
 public class Course {
     String name;
     int course_number;
@@ -35,5 +37,23 @@ public class Course {
     // Method for displaying attribute values
     public void display_course_information(){
         System.out.println("Course name: " + this.name + " Course number: " + this.course_number);
+    }
+    public String getName(){
+        return this.name;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+    public int getCourse_number(){
+        return this.course_number;
+    }
+    public void setCourse_number(int course_number){
+        this.course_number = course_number;
+    }
+    public int getCredit(){
+        return this.credit;
+    }
+    public void setCredit(int credit){
+        this.credit = credit;
     }
 }

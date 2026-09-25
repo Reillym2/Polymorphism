@@ -1,6 +1,6 @@
 public class Student extends BSU_Member{
     double gpa;
-
+    String classification;
     Course [] enrolled_courses;
 
     Student(){
@@ -17,5 +17,7 @@ public class Student extends BSU_Member{
     public void display_information(){
         System.out.println("Inside student-----Status: " +status);
     }
-
+    Student (String classification){
+        this.classification = classification;
+    }
 }

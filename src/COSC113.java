@@ -37,12 +37,40 @@ public class COSC113 extends Course{
     @Override
     public void  display_course_information(){
         //Lab Work - Use super.ATTRIBUTE_NAME in a print statement
-        super.display_course_information();
+
+        System.out.println(super.name);
+        System.out.println(super.course_number);
+
         System.out.println("Syllabus: "+ this.syllabus + " Language: " +this.coding_language +
                 "Instructor: " + this.i1 + "Students: "+ this.students);
     }
 
     // Methods: Public, Default, Protected methods are inherited
+    public String getSyllabus(){
+        return this.syllabus;
+    }
+    public void setSyllabus(String syllabus){
+        this.syllabus = syllabus;
+    }
+
+    public String getCoding_language(){
+        return this.coding_language;
+    }
+    public void setCoding_language(String coding_language){
+        this.coding_language = coding_language;
+    }
+    public Instructor getI1(){
+        return this.i1;
+    }
+    public void setI1(Instructor i1){
+        this.i1 = i1;
+    }
+    public Student[] getStudents(){
+        return this.students;
+    }
+    public void setStudents(Student[] students){
+        this.students = students;
+    }
 
     // Package: Java files under same folder are considered to be in a same package
 }

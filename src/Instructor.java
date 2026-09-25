@@ -2,6 +2,7 @@ import java.lang.classfile.instruction.ReturnInstruction;
 
 public class Instructor extends BSU_Member{
     String department;
+    String role;
 
     Instructor(){
         this.department = "CS";
@@ -12,4 +13,8 @@ public class Instructor extends BSU_Member{
     public void Faculty (){
         System.out.println("Inside Instructor------Department: " + this.department + "Faculty: " + this.status);
     }
+    Instructor(String role){
+        this.role = role;
+    }
+
 }
